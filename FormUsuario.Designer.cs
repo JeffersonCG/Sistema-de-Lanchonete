@@ -66,7 +66,7 @@
             this.lblId.AutoSize = true;
             this.lblId.Location = new System.Drawing.Point(12, 9);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(29, 20);
+            this.lblId.Size = new System.Drawing.Size(23, 16);
             this.lblId.TabIndex = 1;
             this.lblId.Text = "ID:";
             // 
@@ -102,7 +102,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(12, 80);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(63, 20);
+            this.lblNome.Size = new System.Drawing.Size(50, 16);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome: ";
             // 
@@ -111,7 +111,7 @@
             this.lblAdmissao.AutoSize = true;
             this.lblAdmissao.Location = new System.Drawing.Point(15, 156);
             this.lblAdmissao.Name = "lblAdmissao";
-            this.lblAdmissao.Size = new System.Drawing.Size(89, 20);
+            this.lblAdmissao.Size = new System.Drawing.Size(71, 16);
             this.lblAdmissao.TabIndex = 6;
             this.lblAdmissao.Text = "Admissão:";
             // 
@@ -127,7 +127,7 @@
             this.lblCargo.AutoSize = true;
             this.lblCargo.Location = new System.Drawing.Point(368, 9);
             this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(63, 20);
+            this.lblCargo.Size = new System.Drawing.Size(50, 16);
             this.lblCargo.TabIndex = 8;
             this.lblCargo.Text = "Cargo: ";
             // 
@@ -143,7 +143,7 @@
             this.lblLogin.AutoSize = true;
             this.lblLogin.Location = new System.Drawing.Point(371, 80);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(54, 20);
+            this.lblLogin.Size = new System.Drawing.Size(43, 16);
             this.lblLogin.TabIndex = 10;
             this.lblLogin.Text = "Login:";
             // 
@@ -160,7 +160,7 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.Location = new System.Drawing.Point(374, 156);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(61, 20);
+            this.lblSenha.Size = new System.Drawing.Size(49, 16);
             this.lblSenha.TabIndex = 12;
             this.lblSenha.Text = "Senha:";
             // 
@@ -241,6 +241,7 @@
             this.Controls.Add(this.btnLocalizar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Usuario";
             this.Load += new System.EventHandler(this.FormUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();

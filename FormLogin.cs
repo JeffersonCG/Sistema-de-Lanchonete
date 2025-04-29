@@ -22,6 +22,7 @@ namespace SisLanchonete
             InitializeComponent();
             FormSplashScreen formSplash = new FormSplashScreen();
             formSplash.Show();
+            Application.DoEvents();
             Thread.Sleep(3000);
             formSplash.Close();
         }

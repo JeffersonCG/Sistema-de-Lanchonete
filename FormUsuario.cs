@@ -53,19 +53,17 @@ namespace SisLanchonete
                 cmd.Parameters.AddWithValue("@senha", SqlDbType.NChar).Value = txtSenha.Text.Trim();
                 cmd.ExecuteNonQuery();
                 CarregaDGV();
-                MessageBox.Show("Usuário cadastrado com Sucesso!", "Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txtSenha.Text = "";
+                MessageBox.Show("Usuário cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Text = "";
                 txtCargo.Text = "";
                 txtLogin.Text = "";
                 txtSenha.Text = "";
                 dtpAdmissao.Value = DateTime.Now;
                 con.Close();
-
             }
             catch (Exception er)
             {
-
-                MessageBox.Show(er.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(er.Message);
             }
         }
 
