@@ -48,5 +48,11 @@ namespace SisLanchonete
             FormUsuario formUsuario = new FormUsuario();
             formUsuario.Show();
         }
+
+        private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCliente formCliente = new FormCliente();
+            formCliente.Show();
+        }
     }
 }
