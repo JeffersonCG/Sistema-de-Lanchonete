@@ -75,7 +75,7 @@
             this.txtId.Location = new System.Drawing.Point(12, 28);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 22);
-            this.txtId.TabIndex = 2;
+            this.txtId.TabIndex = 1;
             // 
             // dgvUsuario
             // 
@@ -86,7 +86,7 @@
             this.dgvUsuario.ReadOnly = true;
             this.dgvUsuario.RowHeadersWidth = 51;
             this.dgvUsuario.RowTemplate.Height = 24;
-            this.dgvUsuario.Size = new System.Drawing.Size(776, 150);
+            this.dgvUsuario.Size = new System.Drawing.Size(846, 150);
             this.dgvUsuario.TabIndex = 3;
             this.dgvUsuario.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUsuario_CellClick);
             // 
@@ -95,7 +95,7 @@
             this.txtNome.Location = new System.Drawing.Point(12, 99);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(284, 22);
-            this.txtNome.TabIndex = 5;
+            this.txtNome.TabIndex = 2;
             // 
             // lblNome
             // 
@@ -120,7 +120,7 @@
             this.txtCargo.Location = new System.Drawing.Point(371, 32);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(284, 22);
-            this.txtCargo.TabIndex = 9;
+            this.txtCargo.TabIndex = 4;
             // 
             // lblCargo
             // 
@@ -136,7 +136,7 @@
             this.txtLogin.Location = new System.Drawing.Point(371, 99);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(100, 22);
-            this.txtLogin.TabIndex = 11;
+            this.txtLogin.TabIndex = 5;
             // 
             // lblLogin
             // 
@@ -152,7 +152,7 @@
             this.txtSenha.Location = new System.Drawing.Point(374, 175);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(100, 22);
-            this.txtSenha.TabIndex = 13;
+            this.txtSenha.TabIndex = 6;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // lblSenha
@@ -167,10 +167,10 @@
             // btnAtualizar
             // 
             this.btnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(713, 61);
+            this.btnAtualizar.Location = new System.Drawing.Point(764, 80);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnAtualizar.TabIndex = 14;
+            this.btnAtualizar.Size = new System.Drawing.Size(94, 38);
+            this.btnAtualizar.TabIndex = 8;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
@@ -178,10 +178,10 @@
             // btnExcluir
             // 
             this.btnExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(713, 110);
+            this.btnExcluir.Location = new System.Drawing.Point(764, 144);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 15;
+            this.btnExcluir.Size = new System.Drawing.Size(94, 40);
+            this.btnExcluir.TabIndex = 9;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
@@ -189,10 +189,10 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(713, 156);
+            this.btnSair.Location = new System.Drawing.Point(764, 208);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 16;
+            this.btnSair.Size = new System.Drawing.Size(94, 41);
+            this.btnSair.TabIndex = 10;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -200,10 +200,10 @@
             // btnInserir
             // 
             this.btnInserir.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserir.Location = new System.Drawing.Point(713, 12);
+            this.btnInserir.Location = new System.Drawing.Point(764, 16);
             this.btnInserir.Name = "btnInserir";
-            this.btnInserir.Size = new System.Drawing.Size(75, 23);
-            this.btnInserir.TabIndex = 17;
+            this.btnInserir.Size = new System.Drawing.Size(94, 38);
+            this.btnInserir.TabIndex = 7;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
             this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
@@ -214,13 +214,13 @@
             this.dtpAdmissao.Location = new System.Drawing.Point(18, 179);
             this.dtpAdmissao.Name = "dtpAdmissao";
             this.dtpAdmissao.Size = new System.Drawing.Size(114, 22);
-            this.dtpAdmissao.TabIndex = 18;
+            this.dtpAdmissao.TabIndex = 3;
             // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(870, 526);
             this.Controls.Add(this.dtpAdmissao);
             this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.btnSair);
