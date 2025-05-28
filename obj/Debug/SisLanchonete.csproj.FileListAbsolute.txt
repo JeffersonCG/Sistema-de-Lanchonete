@@ -13,3 +13,5 @@ C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.cspr
 C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.exe
 C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.pdb
 C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.FormUsuario.resources
+C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.FormCliente.resources
+C:\Users\ACB Fibra\Documents\Projetos\SisLanchonete\obj\Debug\SisLanchonete.exe.config

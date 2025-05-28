@@ -57,13 +57,14 @@
             this.btnInserir.TabIndex = 6;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
             this.lblCPF.Location = new System.Drawing.Point(12, 9);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(45, 20);
+            this.lblCPF.Size = new System.Drawing.Size(36, 16);
             this.lblCPF.TabIndex = 1;
             this.lblCPF.Text = "CPF:";
             // 
@@ -86,6 +87,7 @@
             this.dgvCliente.RowTemplate.Height = 24;
             this.dgvCliente.Size = new System.Drawing.Size(776, 150);
             this.dgvCliente.TabIndex = 3;
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCliente_CellContentClick);
             // 
             // txtNome
             // 
@@ -99,7 +101,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(12, 69);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(59, 20);
+            this.lblNome.Size = new System.Drawing.Size(47, 16);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome:";
             // 
@@ -115,7 +117,7 @@
             this.lblCidade.AutoSize = true;
             this.lblCidade.Location = new System.Drawing.Point(12, 129);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(68, 20);
+            this.lblCidade.Size = new System.Drawing.Size(54, 16);
             this.lblCidade.TabIndex = 6;
             this.lblCidade.Text = "Cidade:";
             // 
@@ -131,7 +133,7 @@
             this.lblCelular.AutoSize = true;
             this.lblCelular.Location = new System.Drawing.Point(12, 196);
             this.lblCelular.Name = "lblCelular";
-            this.lblCelular.Size = new System.Drawing.Size(65, 20);
+            this.lblCelular.Size = new System.Drawing.Size(52, 16);
             this.lblCelular.TabIndex = 8;
             this.lblCelular.Text = "Celular:";
             // 
@@ -160,6 +162,7 @@
             this.btnAtualizar.TabIndex = 7;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnExcluir
             // 
@@ -170,6 +173,7 @@
             this.btnExcluir.TabIndex = 8;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSair
             // 
@@ -180,6 +184,7 @@
             this.btnSair.TabIndex = 9;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnLocalizar
             // 
@@ -190,6 +195,7 @@
             this.btnLocalizar.TabIndex = 15;
             this.btnLocalizar.Text = "Localizar";
             this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // FormCliente
             // 
@@ -216,6 +222,7 @@
             this.Name = "FormCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.FormCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
