@@ -57,13 +57,14 @@
             this.btnInserir.TabIndex = 0;
             this.btnInserir.Text = "Inserir";
             this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // lblID
             // 
             this.lblID.AutoSize = true;
             this.lblID.Location = new System.Drawing.Point(9, 10);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(29, 20);
+            this.lblID.Size = new System.Drawing.Size(23, 16);
             this.lblID.TabIndex = 1;
             this.lblID.Text = "ID:";
             // 
@@ -99,7 +100,7 @@
             this.lblNome.AutoSize = true;
             this.lblNome.Location = new System.Drawing.Point(9, 68);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(145, 20);
+            this.lblNome.Size = new System.Drawing.Size(116, 16);
             this.lblNome.TabIndex = 4;
             this.lblNome.Text = "Nome do Produto:";
             // 
@@ -115,7 +116,7 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.Location = new System.Drawing.Point(9, 123);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(139, 20);
+            this.lblTipo.Size = new System.Drawing.Size(111, 16);
             this.lblTipo.TabIndex = 6;
             this.lblTipo.Text = "Tipo (Descrição):";
             // 
@@ -131,7 +132,7 @@
             this.lblQuantidade.AutoSize = true;
             this.lblQuantidade.Location = new System.Drawing.Point(9, 183);
             this.lblQuantidade.Name = "lblQuantidade";
-            this.lblQuantidade.Size = new System.Drawing.Size(100, 20);
+            this.lblQuantidade.Size = new System.Drawing.Size(80, 16);
             this.lblQuantidade.TabIndex = 8;
             this.lblQuantidade.Text = "Quantidade:";
             // 
@@ -147,7 +148,7 @@
             this.lblValor.AutoSize = true;
             this.lblValor.Location = new System.Drawing.Point(351, 183);
             this.lblValor.Name = "lblValor";
-            this.lblValor.Size = new System.Drawing.Size(53, 20);
+            this.lblValor.Size = new System.Drawing.Size(42, 16);
             this.lblValor.TabIndex = 10;
             this.lblValor.Text = "Valor:";
             // 
@@ -160,6 +161,7 @@
             this.btnAtualizar.TabIndex = 12;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnExcluir
             // 
@@ -170,6 +172,7 @@
             this.btnExcluir.TabIndex = 13;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnSair
             // 
@@ -180,6 +183,7 @@
             this.btnSair.TabIndex = 14;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // btnLocalizar
             // 
@@ -190,6 +194,7 @@
             this.btnLocalizar.TabIndex = 15;
             this.btnLocalizar.Text = "Localizar";
             this.btnLocalizar.UseVisualStyleBackColor = true;
+            this.btnLocalizar.Click += new System.EventHandler(this.btnLocalizar_Click);
             // 
             // FormProduto
             // 
@@ -216,6 +221,7 @@
             this.Name = "FormProduto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produto";
+            this.Load += new System.EventHandler(this.FormProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvProduto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

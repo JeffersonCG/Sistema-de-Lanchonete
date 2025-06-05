@@ -19,5 +19,132 @@ namespace SisLanchonete
         {
             InitializeComponent();
         }
+
+        public void CarregaDGV()
+        {
+            String str = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\DbLanchonete.mdf\";Integrated Security=True";
+            String query = "SELECT * FROM Produto";
+            SqlConnection con = new SqlConnection(str);
+            SqlCommand cmd = new SqlCommand(query, con);
+            con.Open();
+            cmd.CommandType = CommandType.Text;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable usuario = new DataTable();
+            da.Fill(usuario);
+            dgvProduto.DataSource = usuario;
+            con.Close();
+        }
+
+        private void FormProduto_Load(object sender, EventArgs e)
+        {
+            CarregaDGV();
+        }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("InserirProduto", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@nome", SqlDbType.NChar).Value = txtNome.Text.Trim();
+                cmd.Parameters.AddWithValue("@tipo", SqlDbType.NChar).Value = txtTipo.Text.Trim();
+                cmd.Parameters.AddWithValue("@quantidade", SqlDbType.NChar).Value = txtQuantidade.Text.Trim();
+                cmd.Parameters.AddWithValue("@valor", SqlDbType.Decimal).Value = Convert.ToDecimal(txtValor.Text.Trim());
+                cmd.ExecuteNonQuery();
+                CarregaDGV();
+                MessageBox.Show("Produto cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Text = "";
+                txtTipo.Text = "";
+                txtQuantidade.Text = "";
+                txtValor.Text = "";
+                con.Close();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("AtualizarProduto", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("Id", SqlDbType.Int).Value = Convert.ToInt32(txtID.Text.Trim());
+                cmd.Parameters.AddWithValue("@nome", SqlDbType.NChar).Value = txtNome.Text.Trim();
+                cmd.Parameters.AddWithValue("@tipo", SqlDbType.NChar).Value = txtTipo.Text.Trim();
+                cmd.Parameters.AddWithValue("@quantidade", SqlDbType.NChar).Value = txtQuantidade.Text.Trim();
+                cmd.Parameters.AddWithValue("@valor", SqlDbType.Decimal).Value = Convert.ToDecimal(txtValor.Text.Trim());
+                cmd.ExecuteNonQuery();
+                CarregaDGV();
+                MessageBox.Show("Produto atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtNome.Text = "";
+                txtTipo.Text = "";
+                txtQuantidade.Text = "";
+                txtValor.Text = "";
+                con.Close();
+            }
+            catch (Exception er)
+            {
+                MessageBox.Show(er.Message);
+            }
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("ExcluirProduto", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@Id", SqlDbType.Int).Value = Convert.ToInt32(txtID.Text.Trim());
+                cmd.ExecuteNonQuery();
+                CarregaDGV();
+                MessageBox.Show("Produto apagado com Sucesso!", "Exclusão", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtID.Text = "";
+                txtNome.Text = "";
+                txtTipo.Text = "";
+                txtQuantidade.Text = "";
+                txtValor.Text = "";
+                con.Close();
+
+            }
+            catch (Exception er)
+            {
+
+                MessageBox.Show(er.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnLocalizar_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("LocalizarProduto", con);
+            cmd.Parameters.AddWithValue("@Id", SqlDbType.Int).Value = Convert.ToInt32(txtID.Text.Trim());
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataReader rd = cmd.ExecuteReader();
+            if (rd.Read())
+            {
+                txtNome.Text = rd["nome"].ToString();
+                txtTipo.Text = rd["tipo"].ToString();
+                txtQuantidade.Text = rd["quantidade"].ToString();
+                txtValor.Text = rd["valor"].ToString();
+                con.Close();
+            }
+            else
+            {
+                MessageBox.Show("Nenhum produto localizado com esse ID!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }
