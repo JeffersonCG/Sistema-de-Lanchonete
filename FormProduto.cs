@@ -29,9 +29,9 @@ namespace SisLanchonete
             con.Open();
             cmd.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable usuario = new DataTable();
-            da.Fill(usuario);
-            dgvProduto.DataSource = usuario;
+            DataTable produto = new DataTable();
+            da.Fill(produto);
+            dgvProduto.DataSource = produto;
             con.Close();
         }
 
@@ -144,6 +144,19 @@ namespace SisLanchonete
             else
             {
                 MessageBox.Show("Nenhum produto localizado com esse ID!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvProduto_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvProduto.Rows[e.RowIndex];
+                txtID.Text = row.Cells[0].Value.ToString();
+                txtNome.Text = row.Cells[1].Value.ToString();
+                txtTipo.Text = row.Cells[2].Value.ToString();
+                txtQuantidade.Text = row.Cells[4].Value.ToString();
+                txtValor.Text = row.Cells[5].Value.ToString();
             }
         }
     }

@@ -41,6 +41,7 @@ namespace SisLanchonete
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
+            con.Close();
             try
             {
                 con.Open();
@@ -131,6 +132,12 @@ namespace SisLanchonete
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(txtId.Text) || !int.TryParse(txtId.Text.Trim(), out int id))
+            {
+                MessageBox.Show("Informe um ID numérico válido!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtId.Focus();
+                return;
+            }
             con.Open();
             SqlCommand cmd = new SqlCommand("LocalizarUsuario", con);
             cmd.Parameters.AddWithValue("@Id", SqlDbType.Int).Value = Convert.ToInt32(txtId.Text.Trim());
@@ -163,6 +170,28 @@ namespace SisLanchonete
                 txtLogin.Text = row.Cells[4].Value.ToString();
                 txtSenha.Text = row.Cells[5].Value.ToString();
             }
+        }
+
+        private void txtLogin_Leave(object sender, EventArgs e)
+        {
+            string cli = "SELECT nome, login FROM Usuario WHERE nome = @nome AND login = @login";
+            SqlCommand cmd = new SqlCommand(cli, con);
+            cmd.Parameters.AddWithValue("@nome", SqlDbType.NChar).Value = txtNome.Text.Trim();
+            cmd.Parameters.AddWithValue("@login", SqlDbType.NChar).Value = txtLogin.Text.Trim();
+            con.Open();
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader usuario = cmd.ExecuteReader();
+            if (usuario.HasRows)
+            {
+                MessageBox.Show("Usuario já cadastrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                con.Close();
+                txtNome.Focus();
+                txtCargo.Text = "";
+                txtLogin.Text = "";
+                txtSenha.Text = "";
+                dtpAdmissao.Value = DateTime.Now;
+            }
+
         }
     }
 }

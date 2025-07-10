@@ -74,6 +74,7 @@
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(143, 22);
             this.txtCPF.TabIndex = 1;
+            this.txtCPF.Leave += new System.EventHandler(this.txtCPF_Leave);
             // 
             // dgvCliente
             // 

@@ -28,9 +28,9 @@ namespace SisLanchonete
             con.Open();
             cmd.CommandType = CommandType.Text;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable usuario = new DataTable();
-            da.Fill(usuario);
-            dgvCliente.DataSource = usuario;
+            DataTable cliente = new DataTable();
+            da.Fill(cliente);
+            dgvCliente.DataSource = cliente;
             con.Close();
         }
         private void btnSair_Click(object sender, EventArgs e)
@@ -162,7 +162,21 @@ namespace SisLanchonete
             }
         }
 
-        
+        private void txtCPF_Leave(object sender, EventArgs e)
+        {
+            string cli = "SELECT * FROM Cliente WHERE cpf = @cpf";
+            SqlCommand cmd = new SqlCommand(cli, con);
+            cmd.Parameters.AddWithValue("@cpf",SqlDbType.NChar).Value = txtCPF.Text.Trim();
+            con.Open();
+            cmd.CommandType = CommandType.Text;
+            SqlDataReader cliente = cmd.ExecuteReader();
+            if (cliente.HasRows)
+            {
+                MessageBox.Show("CPF já cadastrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtCPF.Focus();
+                con.Close();
+            }
+        }
     }
     
 }
