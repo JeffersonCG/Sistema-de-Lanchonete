@@ -45,6 +45,7 @@ namespace SisLanchonete
 
         private void btnInserir_Click(object sender, EventArgs e)
         {
+            con.Close();
             try
             {
                 con.Open();
