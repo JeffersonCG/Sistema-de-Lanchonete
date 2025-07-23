@@ -3,22 +3,93 @@
   "WorkspaceRootPath": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|c:\\users\\acb fibra\\documents\\projetos\\sislanchonete\\formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|solutionrelative:formusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|c:\\users\\acb fibra\\documents\\projetos\\sislanchonete\\formcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|solutionrelative:formcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|c:\\users\\acb fibra\\documents\\projetos\\sislanchonete\\formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|solutionrelative:formvenda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B6FB88E7-D2DA-4C13-8900-3AC111C13B28}|SisLanchonete.csproj|solutionrelative:formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 280,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FormUsuario.cs",
+              "DocumentMoniker": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormUsuario.cs",
+              "RelativeDocumentMoniker": "FormUsuario.cs",
+              "ToolTip": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormUsuario.cs",
+              "RelativeToolTip": "FormUsuario.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv5gAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:45:53.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormCliente.cs",
+              "DocumentMoniker": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormCliente.cs",
+              "RelativeDocumentMoniker": "FormCliente.cs",
+              "ToolTip": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormCliente.cs",
+              "RelativeToolTip": "FormCliente.cs",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T22:45:23.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormPrincipal.cs",
+              "RelativeToolTip": "FormPrincipal.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA2wEIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T18:47:54.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "FormPrincipal.cs",
+              "ToolTip": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormPrincipal.cs [Design]",
+              "RelativeToolTip": "FormPrincipal.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-23T18:46:58.238Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FormVenda.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ACB Fibra\\Documents\\Projetos\\SisLanchonete\\FormVenda.cs",
               "RelativeDocumentMoniker": "FormVenda.cs",
@@ -27,6 +98,16 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-21T18:58:03.856Z",
               "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 109,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }
